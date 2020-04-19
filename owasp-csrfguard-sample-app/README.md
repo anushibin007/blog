@@ -1,4 +1,4 @@
-# OWASP_CSRFGurard_Sample_App
+# owasp-csrfguard-sample-app
 
 Read https://anushibin.wordpress.com/2020/04/15/implementing-owasp-csrfguard-in-a-java-web-application/ for more details on this app.
 
