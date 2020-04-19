@@ -1,6 +1,7 @@
 FROM jetbrains/teamcity-server
 
 RUN \
+apt update && \
 # install necessary stuffs
 apt install wget gnupg -y && \
 # Add the Perforce packaging key to your APT keyring
