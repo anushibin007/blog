@@ -23,13 +23,13 @@ COPY wls1036_dev $MW_HOME
 COPY jdk-6u30-linux-x64.bin $WORKDIR
 COPY scripts $SCRIPTS_HOME
 
-### Install JDK
-RUN $WORKDIR/jdk-6u30-linux-x64.bin
-
 ### Pre-req
 RUN chmod -R a+x $SCRIPTS_HOME/*.sh
 RUN chmod -R a+x $MW_HOME/*.sh
 RUN chmod a+x $WORKDIR/*
+
+### Install JDK
+RUN $WORKDIR/jdk-6u30-linux-x64.bin
 
 ### Configure WLS
 RUN source $MW_HOME/configure.sh
