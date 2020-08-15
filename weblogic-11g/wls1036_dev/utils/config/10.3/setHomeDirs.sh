@@ -1,0 +1,2 @@
+MW_HOME="$MW_HOME"
+WL_HOME="$MW_HOME/wlserver"
