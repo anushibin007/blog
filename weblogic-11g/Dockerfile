@@ -28,6 +28,8 @@ RUN $WORKDIR/jdk-6u30-linux-x64.bin
 
 ### Pre-req
 RUN chmod -R a+x $SCRIPTS_HOME/*.sh
+RUN chmod -R a+x $MW_HOME/*.sh
+RUN chmod a+x $WORKDIR/*
 
 ### Configure WLS
 RUN source $MW_HOME/configure.sh
