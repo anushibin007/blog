@@ -9,3 +9,7 @@
 
 # Show seconds in taskbar clock
 ```REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /t REG_DWORD /v ShowSecondsInSystemClock /d 1 /f```
+
+# Python HTTP Server
+```python -m SimpleHTTPServer```
+```python3 -m http.server```
