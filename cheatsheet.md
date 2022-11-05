@@ -13,3 +13,8 @@
 # Python HTTP Server
 ```python -m SimpleHTTPServer```
 ```python3 -m http.server```
+
+# Docker WatchTower
+```sh
+docker run --detach --name watchtower -e WATCHTOWER_NO_PULL=true -e WATCHTOWER_POLL_INTERVAL=5 --volume /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower
+```
