@@ -1,18 +1,30 @@
 # Convert MKV to MP4 from CMD
-```ffmpeg -i LostInTranslation.mkv -codec copy LostInTranslation.mp4```
+```sh
+ffmpeg -i LostInTranslation.mkv -codec copy LostInTranslation.mp4
+```
 
 # Mount an ISO from CMD
-```PowerShell Mount-DiskImage```
+```powershell
+PowerShell Mount-DiskImage
+```
 
 # Install SSHD
-```powershell.exe -ExecutionPolicy Bypass -File install-sshd.ps1```
+```sh
+powershell.exe -ExecutionPolicy Bypass -File install-sshd.ps1
+```
 
 # Show seconds in taskbar clock
-```REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /t REG_DWORD /v ShowSecondsInSystemClock /d 1 /f```
+```regedit
+REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /t REG_DWORD /v ShowSecondsInSystemClock /d 1 /f
+```
 
 # Python HTTP Server
-```python -m SimpleHTTPServer```
-```python3 -m http.server```
+```sh
+python -m SimpleHTTPServer
+```
+```sh
+python3 -m http.server
+```
 
 # Docker WatchTower
 ```sh
