@@ -30,3 +30,13 @@ python3 -m http.server
 ```sh
 docker run --detach --name watchtower -e WATCHTOWER_NO_PULL=true -e WATCHTOWER_POLL_INTERVAL=5 --volume /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower
 ```
+
+# Add delay in JS
+```javascript
+const delay = (time) => {
+	return new Promise(function (resolve) {
+		console.log(`Waiting ${time} millis...`);
+		setTimeout(resolve, time);
+	});
+};
+```
