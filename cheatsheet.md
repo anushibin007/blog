@@ -26,6 +26,11 @@ python -m SimpleHTTPServer
 python3 -m http.server
 ```
 
+# Search inside JAR using 7 Zip
+```
+7z l archive_name.extension file_name.extension -r
+```
+
 # Docker WatchTower
 ```sh
 docker run --detach --name watchtower -e WATCHTOWER_NO_PULL=true -e WATCHTOWER_POLL_INTERVAL=5 --volume /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower
