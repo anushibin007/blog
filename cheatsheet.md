@@ -3,10 +3,10 @@
 ffmpeg -i LostInTranslation.mkv -codec copy LostInTranslation.mp4
 ```
 
-# Convert MKV to MP3
+# Convert Video to MP3
 
 ```sh
-ffmpeg -i input-video.avi -vn -acodec copy output-audio.aac
+ffmpeg -i sample.avi -q:a 0 -map a sample.mp3
 ```
 
 # Mount an ISO from CMD
