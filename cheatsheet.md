@@ -3,6 +3,12 @@
 ffmpeg -i LostInTranslation.mkv -codec copy LostInTranslation.mp4
 ```
 
+# Convert MKV to MP3
+
+```sh
+ffmpeg -i input-video.avi -vn -acodec copy output-audio.aac
+```
+
 # Mount an ISO from CMD
 ```powershell
 PowerShell Mount-DiskImage
