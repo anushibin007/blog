@@ -9,6 +9,11 @@ ffmpeg -i LostInTranslation.mkv -codec copy LostInTranslation.mp4
 ffmpeg -i sample.avi -q:a 0 -map a sample.mp3
 ```
 
+# Bulk cleanup videos (just copy the stream with audio conversion to AAC - for CCTV videos)
+```sh
+for /r %%v in (*.mp4) do ffmpeg -y -i "%%v" -acodec aac -vcodec copy "%%v.mp4"
+```
+
 # Mount an ISO from CMD
 ```powershell
 PowerShell Mount-DiskImage
