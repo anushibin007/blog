@@ -56,3 +56,10 @@ const delay = (time) => {
 	});
 };
 ```
+
+# Prune remote and local branches in Git
+
+```sh
+git fetch -p
+npx git-removed-branches --prune
+```
