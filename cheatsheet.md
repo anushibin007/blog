@@ -63,3 +63,9 @@ const delay = (time) => {
 git fetch -p
 npx git-removed-branches --prune
 ```
+
+# Windows 10 Context Menu in Windows 11
+
+```sh
+reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
+```
